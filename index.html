@@ -134,6 +134,15 @@
 
   </div>
 
+  <script type="text/javascript">
+    var usingSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+    var imageSections = $('section.module.parallax');
+
+    if (!usingSafari) {
+      imageSections.addClass('fixed');
+    }
+  </script>
+
   <!-- Thanks to Nick Salloum for the excellent parallax tutorial and assets -->
   <!-- http://callmenick.com/post/simple-parallax-scrolling-effect -->
 </body>
